@@ -1288,6 +1288,11 @@ img {
   height: auto;
   margin: auto !important;
 }
+@media screen and (max-width: 768px) {
+  .l-footer.-sayama .l-footer--title {
+    margin-bottom: 2% !important;
+  }
+}
 @media screen and (min-width: 767px) {
   .l-footer.-sayama .l-footer--title {
     width: 50%;
@@ -1296,12 +1301,19 @@ img {
   }
 }
 .l-footer.-sayama .l-footer--tel {
+  width: 80%;
   height: auto;
   margin: auto !important;
 }
 @media screen and (min-width: 767px) {
   .l-footer.-sayama .l-footer--tel {
-    margin-left: 0 !important;
+    width: 40%;
+    margin-left: 10px !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .l-footer.-sayama .l-footer--tel {
+    width: 35%;
   }
 }
 @media screen and (min-width: 767px) {
