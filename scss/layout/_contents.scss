@@ -75,6 +75,26 @@
 				}
 			}
 
+			&.-kukaku_btn{
+				top: 88%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 40%;
+				@include mq(tb){
+					top: 83%;
+					width: 15%;
+				}
+			}
+			// 特殊
+			&.--bgImgBtn{
+				width: 90%;
+				transform: translate(-50%, -50%);
+			}
+
+
+
+
+
 
 			.l-contentsBox--wrapper{
 				width: 100%;

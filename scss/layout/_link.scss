@@ -146,6 +146,28 @@
 			}
 		}
     }
+        // 大きくなるボックスボタン
+        &.-contact-box02{
+            display: block;
+            transition-duration: 0.5s;
+            overflow: hidden;
+            .--bgImgBtn{
+                width: 90%;
+                top: 50%;
+                left: 50%;
+                @include mq(sp){
+                    transform: translate(-50%,-50%) scale(1.05);
+                }
+                @include mq(tb){
+                    transform: translate(-50%,-50%) scale(1);
+                    transition: all 0.5s ease-in-out;
+                    &:hover{
+                        transform: translate(-50%,-50%) scale(1.15);
+                        transition-duration: 0.2s;
+                    }
+                }
+            }
+        }
 }
 // a(電話リンク)
 .l-linkTel{
@@ -223,15 +245,34 @@
     transition: all .5s;
     @include mq(tb){
         font-size: 12px;
-        margin-right: 2%;
+        // margin-right: 2%;
     }
     &:hover{
         color: $main-color--gray;
     }
-    &.-p02{
-        margin-right: -2%;
+    &.-c-change {
+        position: relative;
+        color: black;
+        border-bottom: 1px solid black;
+        font-size: 10px;
+        width: 100px;
         @include mq(tb){
-            margin-right: 2%;
+            width: 145px;
+            font-size: 14px;
+            border-bottom: 1px solid black;
+            transition: all 0.5s ease-in-out;
+            &::after{
+                // content: ">";
+                // position: absolute;
+                // top: 50%;
+                // right: 0;
+                // transform: translateY(-50%);
+            }
+
+        }
+        &:hover {
+            transform: scale(1.05);
+            transition-duration: 0.2s;
         }
     }
 }
